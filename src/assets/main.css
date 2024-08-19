@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.nav_bar{
+  margin-top: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,138,47,1) 35%, rgba(0,212,255,1) 100%);
+  width: 100%;
+  padding-top: 10px;
+  color: white;
+
+}
+.product{
+  display: flex;
+  flex-direction: row;
+}
+img{
+  width: 30%;
+  margin-left: 2%;
+}
+.product_info{
+  width: 90%;
+  margin-left: -40%;
+
+}

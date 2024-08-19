@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="src/assets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product App</title>
+
+  </head>
+  <body>
+
+    <div class="nav_bar">
+      <h1>Product App</h1>
+     
+    </div>
+    <div id="app">
+      <div class="product">
+
+        
+        <div class="product_image">
+          <img v-bind:src="image">
+        </div>
+
+        <div class="product_info">
+          <h1> {{ product }}</h1>
+          <p v-if ="inStock">In Stock</p>
+          <p v-else> Out of Stock</p>
+          
+          <div v-for= "variant in variants">
+            <p>{{ variant.variantColor }}</p>
+          </div>
+        </div>
+
+        
+      </div>
+      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
